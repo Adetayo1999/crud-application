@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 82.5%;
+  font-family: sans-serif;
+}
+
+
+.content {
+  padding: 3rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+    font-size:30px;
+
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+ .container form input{
+      display:block;
+      margin-bottom: 10px;
+      border:1px solid rgba(0,0,0,0.19);
+      outline:none;
+      width:300px;
+      padding:0.8rem 1.5rem;
+      border-radius: 3px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      transition: 0.3s ease-in;
+ }
+
+  .content__left input:focus{
+    box-shadow: 0 0.5px 6px 0 #1DA1F2;
+  }
+
+ .content__left button{
+      padding:0.8rem 1.5rem;
+           border:none;
+      outline:none;
+      color:#fff;
+      border-radius: 3px;
+      cursor:pointer;
+ }
+ .content__left button#addbtn{
+    background:#1DA1F2;
+ }
+
+      .content__left button#handleedit{ 
+          background: rgb(16, 185, 129);
+          visibility: hidden;
+          transition: 0.3s ease-in;
+      }
+
+
+   tr{
+       background: #eee;
+   }
+
+   tr:nth-child(even){
+       background: #ddd;
+   }
+
+   th , td{
+       padding:0.8rem;
+   }
+
+   table button{
+       padding:0.3rem;
+       border:none;
+       outline:none;
+       color:#fff;
+       border-radius: 2px;
+       margin-right: 3px;
+       cursor:pointer;
+   }
+ 
+   button.deletebtn{
+       background:rgb(239, 68, 68);
+   }
+
+  button.editbtn{
+      background: rgb(16, 185, 129);
+  }
+
+
+@media (max-width: 760px) {
+  .container {
+      width:90%;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .content__left{
+      margin-bottom: 30px;
+  }
+  
+  h1{
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 15px;
+  }
+}

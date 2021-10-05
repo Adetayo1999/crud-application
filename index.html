@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://localhost/awesome/css/all.min.css">
+
+</head>
+
+<body>
+
+    <section class="content">
+            <h1>CRUD Application Using Local Storage</h1>
+        <div class="container">
+
+            <div class="content__left">
+
+                <form id="myform">
+                    <input type="text" readonly name="identity"  id="userid">
+                    <input type="text"  name="firstname" id="firstname" placeholder="First Name">
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+                    <input type="number" name="pnumber" id="pnumber" placeholder="Phone Number">
+                    <input type="text" name="profession" id="profession" placeholder="Profession">
+                    <button id="addbtn">Add</button>
+                    <button id="handleedit">Update</button>
+                </form>
+
+            </div>
+
+            <div class="content__right">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S/N</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Number</th>
+                            <th>Profession</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tablebody">
+
+                      
+                    </tbody>
+
+                </table>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
